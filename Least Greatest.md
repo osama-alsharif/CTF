@@ -46,12 +46,20 @@ and this done by getting the prime factors of the number that is = LCM(a,b) / GC
 then calculate all possible combinations of A = number of pairs   
 # from Ex2 : 
 # {{2 × 3 × 5} × 2 × 3 × 5 × 7} / {2 × 3 × 5} =  {2 × 3 × 5 × 7}
-# all combinations of {2 × 3 × 5 × 7}
+```
+So we gonna write a python3 script that finds all these prime factors, 
+I used "sympy.primefactors" module
+```python
+from sympy import primefactors
+
+GCD = 30
+LCM = 6300
+A = LCM // GCD
+PF = list(primefactors(A)) 
 ```
 
-
 ### find number of pairs (a,b)
-
+# all combinations of {2 × 3 × 5 × 7}
 
 
 
