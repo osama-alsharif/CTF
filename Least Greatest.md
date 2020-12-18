@@ -37,4 +37,11 @@ and the all factors are {2^2, 3, 7} ==> LCM    # as they are in venn diagram
 So GCD(12,20) = 4, LCM(12,20) = 60
 ```
 Now how can we find (a,b) by knowing the GCD and LCM values ?? 
-### (a,b)
+### find (a,b) 
+
+
+
+
+
+
+
