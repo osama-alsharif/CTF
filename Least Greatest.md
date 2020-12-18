@@ -29,7 +29,7 @@ find GCD(300,630) and LCM(300,630) ?
 primeFactors of 300 : 2 × 3 × 5 
 primeFactors of 630 : 2 × 3 × 5 × 7 
 ```
-![](/PF3.PNG)
+![](/PF1.PNG)
 ```python
 so the 'common factors' {2 × 3 × 5} ==> GCD 
 and the all factors are {{2 × 3 × 5} × 2 × 3 × 5 × 7} ==> LCM
