@@ -38,8 +38,8 @@ and the all factors are {{2 × 3 × 5} × 2 × 3 × 5 × 7} ==> LCM
 So GCD(300,630) = 30, LCM(300,630) = 6300
 ```
 Now how can we find (a,b) by knowing the GCD and LCM values ?? 
-### find (a,b) 
-```
+### find the prime factors  
+```python
 now they alrealy gave as the GCD => common factor.
 and we want to get the all other factors !! 
 and this done by getting the prime factors of the number that is = LCM(a,b) / GCD(a,b) = A 
@@ -47,6 +47,10 @@ then calculate all possible combinations of A = number of pairs
 # from Ex2 : 
 # {{2 × 3 × 5} × 2 × 3 × 5 × 7} / {2 × 3 × 5} =  {2 × 3 × 5 × 7}
 # all combinations of {2 × 3 × 5 × 7}
+```
+
+
+### find number of pairs (a,b)
 
 
 
