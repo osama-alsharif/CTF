@@ -6,7 +6,7 @@ GCD(a,b) × LCM (a,b) = |a×b|
 ```
 But brute forcing is not ideal in this type of question, Because it takes a lot complexity. 
 
-Therefore, the best way is usgin the prime factorization!! 
+Therefore, the best way is usgin the prime factorization !! 
 
 ### Prime Factorization
 Ex1 : 
@@ -38,7 +38,7 @@ and the all factors are {{2 × 3 × 5} × 2 × 3 × 5 × 7} ==> LCM
 
 So GCD(300,630) = 30, LCM(300,630) = 6300
 ```
-Now how can we find (a,b) by knowing the GCD and LCM values ?? 
+Now how can we find (a,b) by knowing the GCD and LCM ?? 
 ### find the prime factors  
 ```python
 now they alrealy gave as the GCD => common factor.
