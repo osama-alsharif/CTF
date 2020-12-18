@@ -59,9 +59,17 @@ PF = list(primefactors(A))  # [2, 3, 5, 7]
 ```
 
 ### find number of pairs (a,b)
+note !! (a,b) != (b,a)
 the number of pairs = the sum of all combinations of all lengths + 1
 
 ![first-img](https://latex.codecogs.com/gif.latex?1%20&plus;%20%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%20%5Cbinom%7Bn%7D%7Bk%7D%3D%202%5E%7Bn%7D)
+
+```python
+compinations of {2, 3, 5, 7}
+{null}, {2}, {3}, {5}, {7}, {2,3}, {2,5}, {2,7}, {3,5}, {3,7}, {5,7}, {2,3,5}, {2,3,7}, {2,5,7}, {3,5,7}, {2,3,5,7}
+
+now the set and it's complement gives us a possible pair   # ex: (2, 3×5×7)   or  (2 × 5, 3 × 7) .... 
+```
 
 
 
