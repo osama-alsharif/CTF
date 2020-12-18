@@ -8,6 +8,7 @@ But this is not ideal in this kind of question, Because it takes a lot complexit
 Therefore, the best way is usgin the prime factorization !! 
 
 ### Prime Factorization
+Ex1 : 
  ```python
 find GCD(12,20) and LCM(12,20) ? 
 
@@ -22,7 +23,7 @@ and the all factors are {{2^2} × 3 × 5} ==> LCM      # as they are in venn dia
 So GCD(12,20) = 4, LCM(12,20) = 60
 ```
 
-Another example :
+Ex2 :
 ```python
 find GCD(300,630) and LCM(300,630) ? 
 
@@ -38,6 +39,14 @@ So GCD(300,630) = 30, LCM(300,630) = 6300
 ```
 Now how can we find (a,b) by knowing the GCD and LCM values ?? 
 ### find (a,b) 
+```
+now they alrealy gave as the GCD => common factor.
+and we want to get the all other factors !! 
+and this done by getting the prime factors of the number that is = LCM(a,b) / GCD(a,b) = A 
+then calculate all possible combinations of A = number of pairs   
+# from Ex2 : 
+# {{2 × 3 × 5} × 2 × 3 × 5 × 7} / {2 × 3 × 5} =  {2 × 3 × 5 × 7}
+# all combinations of {2 × 3 × 5 × 7}
 
 
 
