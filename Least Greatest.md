@@ -5,7 +5,8 @@ we know the relation between GCD and LCM in general :
 GCD(a,b) × LCM (a,b) = |a×b|
 ```
 But brute forcing is not ideal in this type of question, Because it takes a lot complexity. 
-Therefore, the best way is usgin the prime factorization !! 
+
+Therefore, the best way is usgin the prime factorization!! 
 
 ### Prime Factorization
 Ex1 : 
