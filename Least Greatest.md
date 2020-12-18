@@ -55,12 +55,12 @@ from sympy import primefactors
 GCD = 30
 LCM = 6300
 A = LCM // GCD
-PF = list(primefactors(A)) 
+PF = list(primefactors(A))  # [2, 3, 5, 7]
 ```
 
 ### find number of pairs (a,b)
-# all combinations of {2 × 3 × 5 × 7}
-
+the number of pairs = the sum of all combinations of all lengths + 1 
+![](https://latex.codecogs.com/gif.latex?%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%20%5Cbinom%7Bn%7D%7Bk%7D%20%3D%202%5E%7Bn%7D%20-%201)
 
 
 
