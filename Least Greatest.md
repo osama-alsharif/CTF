@@ -14,9 +14,13 @@ find GCD(6,21) and LCM(6,21) ?
 
 primeFactors of 6 : 2 × 3 
 primeFactors of 21 : 3 × 7 
+```
+![](/Images/PF1)
 
-so the 'common factors' is only "3" ==> GCD 
-and the unique factors are "2 × 3 × 7" ==> LCM
+
+```python
+so the 'common factors' is only {3} ==> GCD 
+and the unique factors are {2, 3, 7} ==> LCM
 
 So GCD = 3, LCM = 42
 ```
