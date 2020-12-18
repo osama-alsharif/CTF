@@ -15,7 +15,7 @@ find GCD(6,21) and LCM(6,21) ?
 primeFactors of 6 : 2 × 3 
 primeFactors of 21 : 3 × 7 
 ```
-![](/Images/PF1)
+![](PF1)
 
 
 ```python
