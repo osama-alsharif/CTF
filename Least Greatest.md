@@ -71,6 +71,7 @@ compinations of {2, 3, 5, 7}
 
 now the set and it's complement gives us a possible pair   # ex: (2, 3×5×7)   or  (2 × 5, 3 × 7) .... 
 ```
+![](/PF6.PNG)
 So in the end the number of possible pairs = 
 ![sec-img](https://latex.codecogs.com/gif.latex?2%5E%7Bunique.prime.factors%7D)
 
