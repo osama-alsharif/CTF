@@ -32,7 +32,7 @@ primeFactors of 21 : 2 × 2 × 5
 ![](/PF2.PNG)
 ```python
 so the 'common factors' is only {2^2} ==> GCD 
-and the all factors are {2^2, 3, 7} ==> LCM
+and the all factors are {2^2, 3, 7} ==> LCM    # as they are in venn diagram
 
 So GCD = 4, LCM = 60
 ```
