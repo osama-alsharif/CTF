@@ -71,7 +71,119 @@ compinations of {2, 3, 5, 7}
 now the set and it's complement gives us a possible pair   # ex: (2, 3×5×7)   or  (2 × 5, 3 × 7) .... 
 ```
 So in the end the number of possible pairs = 
-![sec-img](https://latex.codecogs.com/gif.latex?2%5E%7Bn%7D)
+![sec-img](https://latex.codecogs.com/gif.latex?2%5E%7Bunique.prime.factors%7D)
+
+
+## Main Solution 
+```python
+from sympy import primefactors
+
+GCD = 30
+LCM = 6300
+Ans = 0
+
+if GCD == LCM:
+    Ans = 1
+else:
+    A = LCM // GCD
+    PF = list(primefactors(A))
+    Ans = 2**(len(PF))
+  
+print(Ans)
+```
+
+## Socket Connection
+```python 
+#!/usr/bin/python3
+from sympy import primefactors
+import socket, time, sys
+# errors list :
+# if the recv text was not completed ==> recv(size) the size is small  &&&&&  sleep after sending for a while (0.5 sec or more less)
+
+class NetCat:
+	def __init__(self, host="0.0.0.0", port=1337):
+		self.CSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		self.host , self.port = host , port 
+		self.LAST_RECV = '' 
+		
+		self.CSock.connect((self.host, self.port))
+
+		self.LAST_RECV = self._Recv_(self.CSock)
+		print(self.LAST_RECV)
+
+
+	def _Send_(self, data, CSock, NewLine=True):
+		CSock.sendall((str(data).rstrip('\n') + ('\n' if NewLine else '')).encode()) # +- '\n' 
+		time.sleep(0.5)
+
+
+	def _Recv_(self, CSock):
+		return CSock.recv(16384).decode('utf-8').rstrip('\n')
+
+
+	def Handle(self):
+		while True:
+			print(self.LAST_RECV)
+
+			context = self.LAST_RECV.split('\n')
+
+			if context[-1] == '':
+				context.pop()
+
+			# question dependencies ######################  
+
+			GCD = int(context[-2].split('=')[-1].strip(' '))
+			LCM = int(context[-1].split('=')[-1].strip(' '))
+			
+			ans = 0
+			if GCD == LCM:
+				ans = 1
+			elif LCM % GCD == 0:
+				A = LCM // GCD
+				PF = list(primefactors(A))
+				ans = 2**len(PF)
+			
+			print(ans)
+			self._Send_(ans, self.CSock) 
+			self.LAST_RECV = self._Recv_(self.CSock)
+
+			# question dependencies ###################### 
+
+		self.CSock.close()		
+
+	def Close(self):
+		print('Iam oout ^^')
+		self.CSock.close()
+
+
+def main(argv):
+
+	Host, Port = "challs.xmas.htsp.ro", 6050
+
+	if len(argv) == 2:
+		Port = int(argv[1])
+	elif len(argv) >= 3:
+		Host, Port = argv[1], int(argv[2])
+
+
+	Client = NetCat(Host, Port)
+	try:
+		Client.Handle()
+
+	except KeyboardInterrupt: # Ror ^C  
+		server.Close()
+	except (ConnectionRefusedError, BrokenPipeError): # For ....    , For if ^C the server
+		server.Close()
+		print("\033[1m\033[31mServer Is Down\033[37m\033[0m")
+	finally:
+		Client.Close()			
+
+
+if __name__ == "__main__":
+	main(sys.argv)
+```
+
+
 
 
 
