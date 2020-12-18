@@ -48,8 +48,8 @@ then calculate all possible combinations of A = number of pairs
 # from Ex2 : 
 # {{2 × 3 × 5} × 2 × 3 × 5 × 7} / {2 × 3 × 5} =  {2 × 3 × 5 × 7}
 ```
-So we gonna write a python3 script that finds all these prime factors, 
-I used "sympy.primefactors" module
+![](/PF5.PNG)
+So we gonna write a python3 script that finds all these prime factors, using "sympy.primefactors" module
 ```python
 from sympy import primefactors
 
