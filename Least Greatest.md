@@ -20,7 +20,7 @@ primeFactors of 21 : 3 × 7
 so the 'common factors' is only {3} ==> GCD 
 and the all factors are {2, {3}, 7} ==> LCM
 
-So GCD = 3, LCM = 42
+So GCD(6,21) = 3, LCM(6,21) = 42
 ```
 Another example :
 ```python
@@ -34,5 +34,7 @@ primeFactors of 21 : 2 × 2 × 5
 so the 'common factors' is only {2^2} ==> GCD 
 and the all factors are {2^2, 3, 7} ==> LCM    # as they are in venn diagram
 
-So GCD = 4, LCM = 60
+So GCD(12,20) = 4, LCM(12,20) = 60
 ```
+Now how can we find (a,b) by knowing the GCD and LCM values ?? 
+### (a,b)
