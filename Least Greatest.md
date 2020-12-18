@@ -1,4 +1,4 @@
-## GCD & LCM
+## Least Greatest
 
 we know the relation between GCD and LCM in general : 
 ```python
