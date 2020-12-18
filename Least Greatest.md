@@ -97,8 +97,6 @@ print(Ans)
 #!/usr/bin/python3
 from sympy import primefactors
 import socket, time, sys
-# errors list :
-# if the recv text was not completed ==> recv(size) the size is small  &&&&&  sleep after sending for a while (0.5 sec or more less)
 
 class NetCat:
 	def __init__(self, host="0.0.0.0", port=1337):
@@ -119,7 +117,6 @@ class NetCat:
 
 	def _Recv_(self, CSock):
 		return CSock.recv(16384).decode('utf-8').rstrip('\n')
-
 
 	def Handle(self):
 		while True:
@@ -156,31 +153,19 @@ class NetCat:
 		self.CSock.close()
 
 
-def main(argv):
-
+def main():
 	Host, Port = "challs.xmas.htsp.ro", 6050
-
-	if len(argv) == 2:
-		Port = int(argv[1])
-	elif len(argv) >= 3:
-		Host, Port = argv[1], int(argv[2])
-
 
 	Client = NetCat(Host, Port)
 	try:
 		Client.Handle()
-
-	except KeyboardInterrupt: # Ror ^C  
+	except: 
 		server.Close()
-	except (ConnectionRefusedError, BrokenPipeError): # For ....    , For if ^C the server
-		server.Close()
-		print("\033[1m\033[31mServer Is Down\033[37m\033[0m")
 	finally:
 		Client.Close()			
 
-
 if __name__ == "__main__":
-	main(sys.argv)
+	main()
 ```
 
 
