@@ -16,11 +16,23 @@ primeFactors of 6 : 2 × 3
 primeFactors of 21 : 3 × 7 
 ```
 ![](/PF1.PNG)
-
-
 ```python
 so the 'common factors' is only {3} ==> GCD 
-and the unique factors are {2, 3, 7} ==> LCM
+and the all factors are {2, {3}, 7} ==> LCM
 
 So GCD = 3, LCM = 42
+```
+Another example :
+```python
+find GCD(12,20) and LCM(12,20) ? 
+
+primeFactors of 12 : 2 × 2 × 3 
+primeFactors of 21 : 2 × 2 × 5 
+```
+![](/PF2.PNG)
+```python
+so the 'common factors' is only {2^2} ==> GCD 
+and the all factors are {2^2, 3, 7} ==> LCM
+
+So GCD = 4, LCM = 60
 ```
