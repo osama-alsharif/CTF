@@ -1,6 +1,6 @@
 ## GCD & LCM
 
-we know the relation between GCD and LCM is : 
+we know the relation between GCD and LCM in general : 
 ```python
 GCD(a,b) × LCM (a,b) = |a×b|
 ```
@@ -27,7 +27,7 @@ Another example :
 find GCD(300,630) and LCM(300,630) ? 
 
 primeFactors of 300 : 2 × 3 × 5 
-primeFactors of 360 : 2 × 3 × 5 × 7 
+primeFactors of 630 : 2 × 3 × 5 × 7 
 ```
 ![](/PF3.PNG)
 ```python
