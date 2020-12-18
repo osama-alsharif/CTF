@@ -1,5 +1,5 @@
 the realation between the GCD and LCM is : 
 
 ```python
-print("test") # comment
+LCM (a,b) × GCD(a,b) = |a×b|
 ```
