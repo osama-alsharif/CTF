@@ -162,7 +162,7 @@ def main():
 	try:
 		Client.Handle()
 	except: 
-		server.Close()
+		Client.Close()
 	finally:
 		Client.Close()			
 
